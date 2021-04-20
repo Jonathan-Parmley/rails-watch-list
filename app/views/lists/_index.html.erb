@@ -1,0 +1,8 @@
+<% lists.each do |l| %>
+  <div class="card-category m-2" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://source.unsplash.com/2uwFEAGUm6E)">
+    <%= link_to l.name, list_path(l) %>
+  </div>
+<% end %>
+
+
+
