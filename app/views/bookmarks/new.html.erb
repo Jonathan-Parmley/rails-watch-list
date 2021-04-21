@@ -1,0 +1,7 @@
+<div class="container">
+  <%= simple_form_for [@list, @bookmark] do |f| %>
+    <%= f.association :movie, prompt: 'Select a movie', input_html: { class: 'slect2'} %>
+    <%= f.input :comment, placeholder: "bookmark comment..." %>
+    <%= f.submit class: 'btn btn-success' %>
+  <% end %>
+</div>

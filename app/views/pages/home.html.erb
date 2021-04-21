@@ -1,6 +1,6 @@
 <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://source.unsplash.com/evlkOfkQ5rE);">
   <div class="container">
-    <h1>Save and kind of movies</h1>
+    <h1>Save your favourite movies</h1>
   </div>
 </div>
 
@@ -8,7 +8,8 @@
   <div>
     <div class="d-flex justify-content-between mt-4">
       <h2>My Lists</h2>
-      <button type="button" class="btn btn-success">Create a movie list</button>
+
+      <%= link_to 'Create a movie list', new_list_path(@list), class: 'btn btn-success' %>
     </div>
     <div class="d-flex">
       <%= render 'lists/index', lists: @lists %>
